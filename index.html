@@ -419,7 +419,7 @@ h1, .clock h1{
             }, 3000); // Remove confetti after 3 seconds
         }
 
-        setInterval(createConfetti, 100);
+        
     
 let userName = window.location.href.split('name=')[1]
 let capitalizedName = []
@@ -448,7 +448,8 @@ function capitalizeFirstLettor(word){
     return word[0].toUpperCase() + word.slice(1)
 }
 const button = document.querySelector(".openCardBtn")
-function showCard(){  
+function showCard(){ 
+    setInterval(createConfetti, 100);
   button.style.display = "block";
 }
 function playsong() {
