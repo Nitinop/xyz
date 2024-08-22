@@ -396,6 +396,19 @@ h1, .clock h1{
               
 
         </section>
+    
+    function createConfetti() {
+            const confettiContainer = document.createElement('div');
+            confettiContainer.classList.add('confetti');
+            confettiContainer.style.left = Math.random() * window.innerWidth + 'px';
+            document.body.appendChild(confettiContainer);
+
+            setTimeout(() => {
+                document.body.removeChild(confettiContainer);
+            }, 3000); // Remove confetti after 3 seconds
+        }
+
+        setInterval(createConfetti, 100);
         
 <script>
 let userName = window.location.href.split('name=')[1]
