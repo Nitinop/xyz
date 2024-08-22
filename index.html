@@ -377,7 +377,7 @@ h1, .clock h1{
             </div>
             <div class="card-back" id="Div">
                 <div class="message">
-                    <p class="emoji">🎉🎂🎈</p>
+                    <p class="emoji"></p>
                     <p class="birthstone-bounce-regular">Happy Birthday!</p>
                     <span class="userName birthstone-bounce-regular"></span>
                     <p class="messageText">Wishing you a day filled with love, joy, and happiness. May all your dreams come true!</p>
@@ -397,6 +397,9 @@ h1, .clock h1{
 
         </section>
     
+    
+        
+<script>
     function createConfetti() {
             const confettiContainer = document.createElement('div');
             confettiContainer.classList.add('confetti');
@@ -409,8 +412,7 @@ h1, .clock h1{
         }
 
         setInterval(createConfetti, 100);
-        
-<script>
+    
 let userName = window.location.href.split('name=')[1]
 let capitalizedName = []
 
